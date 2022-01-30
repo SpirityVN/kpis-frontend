@@ -2,11 +2,6 @@
 const path = require('path')
 
 module.exports = {
-    style: {
-        postcssOptions: {
-            plugins: [require('tailwindcss'), require('autoprefixer')],
-        },
-    },
     webpack: {
         configure: (webpackConfig, { paths }) => {
             paths.appBuild = webpackConfig.output.path = path.resolve('dist')
